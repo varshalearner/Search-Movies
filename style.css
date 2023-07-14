@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    background: linear-gradient(-135deg, #e4ad4680 50%, transparent 0);
+    background-size: 100vw 100vh;
+    background-color: #f6eec8;
+    background-attachment: fixed;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 90%;
+    /* background-color: aquamarine; */
+}
+.movies-search{
+    /* margin: 10px ; */
+    width: 100%;
+    /* background-color: aqua; */
+}
+.search-box{
+    margin: 10px ;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+    min-width: 15ch;
+    /* padding: 20px;  */
+    font-size: xx-large;
+    border-radius: 50px;
+    outline: none;
+    background-color: rgb(249, 243, 208);
+}
+input:hover{
+    border-style:outset ;
+    background-color: rgb(254, 243, 189);
+}
+.button{
+    margin-left: 20px;
+    padding: 20px 40px;
+    font-size: x-large;
+    border-radius: 50px;
+    
+}
+.button:hover{
+    background-color: gray;
+    color: white;
+    border-color: gray;
+}
+.images-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+span{
+    width: 200px;
+    margin: 1rem;
+    border: 1px solid transparent;
+}
+img{
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 1rem;
+    transition: ease-in 200ms;
+}
+img:hover{
+    box-shadow: inset gray;
+    transform: scale(1.05);
+}
+@media only screen and (max-width: 600px) {
+  input, .button {
+    padding: 10px 20px;
+    font-size:large;
+  }
+}
